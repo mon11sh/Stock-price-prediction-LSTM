@@ -63,7 +63,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Create the LSTM model
 model = Sequential([
-    LSTM(50, activation='relu', input_shape=(SEQ_LENGTH, len(features)), return_sequences=True),
+    LSTM(60, activation='relu', input_shape=(SEQ_LENGTH, len(features)), return_sequences=True),
     Dropout(0.2),
     LSTM(50, activation='relu'),
     Dropout(0.2),
@@ -135,7 +135,7 @@ def predict_future_values_with_sentiment(model, last_sequence, future_steps, sca
     return predictions
 
 # Define the number of future steps to predict (30 days)
-future_steps = 120
+future_steps = 30
 
 # Get the last sequence from the test data
 last_sequence = X_test[-1]  # This is the last sequence the model saw
