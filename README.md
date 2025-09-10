@@ -1,4 +1,4 @@
-This project predicts stock prices using Long Short-Term Memory (LSTM) models and sentiment analysis via BERT, leveraging historical stock data and social sentiment to enhance prediction accuracy.
+This project predicts stock prices using Long Short-Term Memory (LSTM) models and sentiment analysis , leveraging historical stock data and social sentiment to enhance prediction accuracy.
 
 ### Overview
 
